@@ -19381,7 +19381,7 @@ function registerDefaultTableLayouts(layoutBuilder) {
         return (i === node.table.headerRows) ? 2 : 1;
       },
       vLineWidth: function(i) { return 0; },
-      hLineColor: function(i) { return i === 1 ? 'black' : '#aaa'; },
+      hLineColor: function(i, node) { return i === node.table.headerRows ? 'black' : '#aaa'; },
       paddingLeft: function(i) {
         return i === 0 ? 0 : 8;
       },
